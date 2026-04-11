@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/*.py": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    { "source": "/api/ziko-outfit-image", "destination": "/api/ziko-outfit" }
+  ]
+}
