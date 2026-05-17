@@ -11,7 +11,7 @@ IMAGE_TIMEOUT = 8
 
 def fetch_player_info(uid):
     try:
-        r = requests.get(f"https://sheihk-anamul-info-ob53.vercel.app/player-info?uid={uid}", timeout=IMAGE_TIMEOUT)
+        r = requests.get(f"http://203.57.85.58:2035/player-info?uid={uid}&key=@yashapis", timeout=IMAGE_TIMEOUT)
         r.raise_for_status()
         return r.json()
     except:
